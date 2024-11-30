@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - MedCare HMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="doctors.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=50&h=50&fit=crop" alt="Logo">
+                <h1>MedCare</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Dashboard</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li class="active"><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search doctors...">
+                </div>
+                <button class="add-button">Add Doctor</button>
+            </header>
+
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-header">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&h=150&fit=crop" alt="Dr. Michael Smith">
+                        <div class="status available">Available</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Smith</h3>
+                        <p class="specialty">Cardiology</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">Experience</span>
+                                <span class="value">15 years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Patients</span>
+                                <span class="value">1.2k+</span>
+                            </div>
+                        </div>
+                        <button class="schedule-btn">View Schedule</button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-header">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop" alt="Dr. Sarah Johnson">
+                        <div class="status busy">In Surgery</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Neurology</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">Experience</span>
+                                <span class="value">12 years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Patients</span>
+                                <span class="value">800+</span>
+                            </div>
+                        </div>
+                        <button class="schedule-btn">View Schedule</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.appointments-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date-filter {
+    display: flex;
+    align-items: center;
+}
+
+.date-filter input {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.875rem;
+}
+
+.time-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.time {
+    min-width: 100px;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.appointment-card {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.patient-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.patient-info p {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.appointment-status {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.appointment-status.scheduled {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.appointment-status.in-progress {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.appointment-status.completed {
+    background-color: var(--success-color);
+    color: white;
+}

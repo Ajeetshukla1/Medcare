@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare - Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/0eef50f618.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=50&h=50&fit=crop" alt="Logo">
+                <h1>MedCare</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="home.html">Dashboard</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="user-profile">
+                    <span>Dr. John Doe</span>
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=35&h=35&fit=crop" alt="Profile">
+                </div>
+            </header>
+
+            <div class="dashboard">
+                <h2>Dashboard Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon patients"><i class="fa-solid fa-users-medical" style="color: #010813;"></i></div>
+                        <div class="stat-details">
+                            <h3>Total Patients</h3>
+                            <p>1,234</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon appointments"><i class="fa-solid fa-calendar-check" style="color: #000205;"></i></div>
+                        <div class="stat-details">
+                            <h3>Appointments</h3>
+                            <p>42</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon doctors"><i class="fa-solid fa-stethoscope" style="color: #000000;"></i></div>
+                        <div class="stat-details">
+                            <h3>Doctors</h3>
+                            <p>28</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon revenue"><i class="fa-solid fa-indian-rupee-sign" style="color: #00060f;"></i></div>
+                        <div class="stat-details">
+                            <h3>Revenue</h3>
+                            <p>$13.5k</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-activity">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon appointment"><i class="fa-solid fa-hospital-user" style="color: #010813;padding:10px"></i></i></div>
+                            <div class="activity-details">
+                                <h4>New Appointment</h4>
+                                <p>Sarah Johnson - Cardiology</p>
+                                <span class="time">2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon patient"><i class="fa-solid fa-bed" style="color: #00040a; padding:10px"></i></div>
+                            <div class="activity-details">
+                                <h4>Patient Admitted</h4>
+                                <p>Michael Brown - Room 302</p>
+                                <span class="time">1 hour ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

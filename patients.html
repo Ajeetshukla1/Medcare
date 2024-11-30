@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - MedCare HMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patients.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=50&h=50&fit=crop" alt="Logo">
+                <h1>MedCare</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Dashboard</a></li>
+                <li class="active"><a href="patients.html">Patients</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search patients...">
+                </div>
+                <button class="add-button">Add Patient</button>
+            </header>
+
+            <div class="patients-list">
+                <h2>Patients List</h2>
+                <table class="patients-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Age</th>
+                            <th>Contact</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sarah Johnson</td>
+                            <td>P-001</td>
+                            <td>32</td>
+                            <td>+1 234-567-8901</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn view">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Michael Brown</td>
+                            <td>P-002</td>
+                            <td>45</td>
+                            <td>+1 234-567-8902</td>
+                            <td><span class="status discharged">Discharged</span></td>
+                            <td>
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn view">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

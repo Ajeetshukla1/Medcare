@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MedCare HMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login_css.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-left">
+            <div class="login-content">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=50&h=50&fit=crop" alt="Logo" class="login-logo">
+                <h1>MedCare</h1>
+                <p class="subtitle">Hospital Management System</p>
+                
+                <form class="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="Enter your password">
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="login-right">
+            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=1200&fit=crop" alt="Hospital" class="hero-image">
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.patients-list {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.patients-table th,
+.patients-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.patients-table th {
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status.active {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.status.discharged {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.action-btn {
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+}
+
+.action-btn.edit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.action-btn.view {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
